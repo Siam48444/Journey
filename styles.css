@@ -259,29 +259,3 @@ h1{
         color: #213555;
     }
 }
-
-.leftline{
-    content: '';
-    width: 1px;
-    transform: rotate(90);
-    height: 100%;
-    background-color: #213555;
-    left: 0;
-    top: 250px;
-    position: absolute;
-    transition: transform 300ms,
-                opacity 300ms;
-    animation: leftline 1000ms ease-out forwards;
-    animation-delay: 4000ms;
-}
-
-@keyframes leftline{
-    from{
-        transform: translateY(500px);
-        opacity: 0;
-    }
-    to{
-        transform: translateX(110px);
-        opacity: 1;
-    }
-}
