@@ -385,15 +385,15 @@ svg{
     margin-bottom: 30px;
     cursor: pointer;
     fill: transparent;
-    transition: fill 300ms;
     animation: svg forwards ease-out 1000ms;
     animation-delay: 4800ms;
+    position: relative;
 }
 
 @keyframes svg{
     from{
         opacity: 0;
-        transform: translateX(50px);
+        transform: translateX(30px);
         fill: #213555;
     }
     to{
@@ -401,4 +401,13 @@ svg{
         transform: translateX(0px);
         fill: #213555;
     }   
+}
+
+.boxes{
+    top: 850px;
+    bottom: 0;
+    position: absolute;
+    background-color: #213555;
+    height: 500px;
+    width: 100%;
 }
