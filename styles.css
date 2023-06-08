@@ -121,7 +121,7 @@ header nav ul li a:hover{
 
 header nav ul li button{
     padding: 8px 15px;
-    border: solid 1.5px;
+    border: solid 1px;
     cursor: pointer;
     align-items: center;
     justify-content: center; 
@@ -136,14 +136,12 @@ header nav ul li button{
     border-radius: 10px;
     border-color: #213555;
     transition: background-color 300ms,
-                border-color 300ms,
-                border-radius 300ms;
+                border-color 300ms;
 }   
 
 .login:hover{
     background-color: #4F709C;
     border-color: #4F709C;
-    border-radius: 15px;
 }
 
 .login:active{
@@ -179,7 +177,7 @@ header nav ul li button{
 
 section{
     align-items: center;
-    margin: 200px 300px;
+    margin: 180px 300px;
     background-color: transparent;
 }
 
@@ -218,7 +216,6 @@ h1{
     font-size: 80px;
     color: transparent;
     font-weight: 800;
-    cursor: pointer;
     background-color: transparent;
     transition: color 300ms;
     animation: h1 ease-out 1000ms forwards;
@@ -258,4 +255,98 @@ h1{
         opacity: 1;
         color: #213555;
     }
+}
+
+p{
+    font-weight: 300;
+    font-size: 17px;
+    color: transparent;
+    width: 50%;
+    margin: 530px 100px;
+    position: absolute;
+    background-color: transparent;
+    animation: p ease-out forwards 1000ms;
+    animation-delay: 4200ms;
+}
+
+@keyframes p{
+    from{
+        opacity: 0;
+        color: transparent;
+        transform: translateX(-30px);
+    }
+    to{
+        opacity: 1;
+        color: #213555;
+        transform: translateX(0px);
+    }   
+}
+
+.herobtns{
+    position: absolute;
+    margin: 630px 100px;
+    transform: translateX(-500px);
+    width: 250px;
+    background-color: transparent;
+    display: flex;
+    justify-content: space-between;
+    animation: herobtns ease-out forwards 1000ms;
+    animation-delay: 4200ms;
+}
+
+@keyframes herobtns{
+    from{
+        opacity: 0;
+        transform: translateX(-30px);
+    }
+    to{
+        opacity: 1;
+        transform: translateX(0px);
+    }   
+}
+
+.join{
+    color: #F5EFE7;
+    padding: 8px 15px;
+    background-color: #213555;
+    font-size: 17px;
+    font-weight: 300;
+    border-radius: 10px;
+    border-color: #213555;
+    border: solid 1px;
+    cursor: pointer;
+    transition: background-color 300ms,
+                border-color 300ms;
+}
+
+.join:hover{
+    background-color: #4F709C;
+    border-color: #4F709C;
+}
+
+.join:active{
+    color: #213555;
+    background-color: #F5EFE7;
+    border: 1px solid #213555;
+}
+
+.contact{
+    color: #213555;
+    padding: 8px 15px;
+    background-color: #F5EFE7;
+    font-size: 17px;
+    font-weight: 300;
+    border-radius: 10px;
+    border-color: #213555;
+    border: solid 1px;
+    cursor: pointer;
+    transition: background-color 300ms,
+                border-color 300ms,
+                letter-spacing 300ms;
+}
+
+.contact:active{
+    color: #F5EFE7;
+    background-color: #213555;
+    border: 1px solid #213555;
 }
