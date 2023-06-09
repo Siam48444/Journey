@@ -412,6 +412,7 @@ svg{
     width: 100%;
     animation: boxes ease-out forwards 1000ms;
     animation-delay: 5000ms;
+    transition: all 300ms;
 }
 
 @keyframes boxes{
@@ -422,7 +423,7 @@ svg{
     }
     to{
         opacity: 1;
-        transform: translateX(0px);
+        transform: translateY(0px);
         background-color: #213555;
     }   
 }
